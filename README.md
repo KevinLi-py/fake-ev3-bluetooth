@@ -36,7 +36,7 @@ Here's a example from the offical document (comments modified).
 > Server: 
 ```python
 # Before running this program, make sure the client and server EV3 bricks or 
-# PC are paired using Bluetooth, but do NOT connect them. The program  will
+# PC are paired using Bluetooth, but do NOT connect them. The program will
 # take care of establishing the connection.
 
 # The server must be started before the client!
