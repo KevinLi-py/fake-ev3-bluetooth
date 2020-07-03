@@ -90,8 +90,8 @@ Traceback (most recent call last):
     bt.bind (self._sockfd, addr, port)
 OSError
 ```
-> The reason may be that you can't bind `BluetoothSocket` on port 1.
-  To solve this problem, add this to both the client and server code before instancing the `BluetoothMailboxServer` or `BluetoothMailboxClient` class:
+> The reason may be that you can't bind `BluetoothSocket` on port 1 (default).
+  To solve this problem, add this to ***both the client and server*** code before instancing the `BluetoothMailboxServer` or `BluetoothMailboxClient` class:
 ```python
 import pybricks.messaging
 pybricks.messaging.EV3_RFCOMM_CHANNEL = 20  # Modify the default port. Other port numbers should also work.
